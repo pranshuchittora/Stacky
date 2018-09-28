@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper purple">
+            <a href="#" class="brand-logo center">
+                Stacky
+                <i class="material-icons">format_align_right</i>
+            </a>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <div class="" id="stack-cont" min-height="800px">
+        <div class="stack-element">
+            <h2>null</h2>
+        </div>
+    </div>
+    <div class="container">
+        <!-- ards -->
+        <div class="row">
+            <!-- card 1 -->
+            <div class="col s12 m4 ">
+                <div class="card card-menu">
+                    <div class="card-content">
+                        <span class="card-title">
+                            push()
+                        </span>
+                        <p>
+                            Push operation on a stack results in the addition of a new element on the top of the
+                            stack.</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row center">
+                            <div class="col m3 s12"> <input type="number" id="push-value-input" class="center" value="0"></div>
+                            <div class="col m9 s12 center">
+                                <div class="col s4">
+                                    <a class="btn-floating btn-large waves-effect waves-light " onclick="decrement_push_value()"><i
+                                            class="material-icons">arrow_back</i></a>
+                                </div>
+                                <div class="col s4"><a class="btn-floating btn-large waves-effect waves-light " onclick="push_to_stack()"><i
+                                            class="material-icons">add</i></a>
+                                </div>
+                                <div class="col s4">
+                                    <a class="btn-floating btn-large waves-effect waves-light " onclick="increment_push_value()"><i
+                                            class="material-icons">arrow_forward</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col s12 m4 ">
+                <div class="card card-menu">
+                    <div class="card-content">
+                        <span class="card-title">pop()</span>
+                        <p>
+                            Pop is an operation performed on a stack to remove the topmost element form it.</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="center">
+                            <a class="btn-floating btn-large waves-effect waves-light " onclick="pop_from_stack()"><i
+                                    class="material-icons">delete_forever</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col s12 m4 ">
+                <div class="card card-menu">
+                    <div class="card-content">
+                        <span class="card-title">peek()</span>
+                        <p>
+                            Peek is sort of a get operation performed on a stack which returns the topmost element in
+                            stack.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="center col s4 offset-s4" id="peek-cont">
+                                <h4 id="peek-value">null</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card cont end -->
+        </div>
+        <!-- cont end -->
+    </div>
+</body>
+<link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
+<script src="./scripts/main.js"></script>
+
+</html>

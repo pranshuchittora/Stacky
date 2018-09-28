@@ -1,0 +1,11 @@
+{
+    "search.exclude": {
+        "**/node_modules": true
+    },
+    "eslint.enable": true,
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "html.format.maxPreserveNewLines": 0
+}
