@@ -1,20 +1,31 @@
-#stack-cont {
-    padding: 30px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+* {
+    box-sizing: border-box;
+}
+#left-cont {
+    overflow-x: hidden;
+    overflow-y: scroll;
     white-space: nowrap;
-
-    background: rgb(224, 224, 224);
+    height: 80vh;
+    padding: 10px;
+}
+#stack-cont {
+    display: flex;
+    flex-direction: column-reverse;
+    background: rgb(70, 44, 10);
+    min-height: 100%;
 }
 .stack-element {
-    min-width: 100px;
-
+    min-height: 150px;
+    display: flex;
     border: 2px dashed rgb(254, 255, 176);
+
     background: rgb(198, 253, 255);
-    display: inline-block;
+    background: linear-gradient(135deg, rgb(254, 255, 168), rgb(198, 255, 171));
+    height: 100px;
     text-align: center;
-    padding: 10px;
     margin: 5px;
+    justify-content: center;
+    padding: 10px 20px;
 }
 
 #peek-cont {

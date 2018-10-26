@@ -21,112 +21,118 @@
         </div>
     </nav>
     <!-- nav end -->
-    <div class="" id="stack-cont" min-height="800px">
-        <div class="stack-element">
-            <h2>null</h2>
-        </div>
-    </div>
-    <div class="container">
-        <!-- stack-config -->
-        <div class="row" style="margin-top:30px;">
-            <div class="col s12 ">
-                <div class="col s4 center">
-                    <h4 id="stack-status"> null</h4>
+    <div class="row">
+        <div id="left-cont" class="col s12  l3">
+            <div id="stack-cont" min-height="800px">
+                <div class="stack-element">
+                    <h2>Fill me up</h2>
                 </div>
-                <div class="col s4 center input-field">
-                    <input type="number" id="stack-size" class="center" value="5"> <label for="stack-size">Stack
-                        Size</label>
-                </div>
-                <div class=" col  btn " onclick="changeStackSize()">Apply</div>
             </div>
         </div>
-        <!-- stack config end -->
-        <!-- ards -->
-        <div class="row">
-            <!-- card 1 -->
-            <div class="col s12 m4 ">
-                <div class="card card-menu">
-                    <div class="card-content">
-                        <span class="card-title">
-                            push()
-                        </span>
-                        <p>
-                            Push operation on a stack results in the addition of a new element on the top of the
-                            stack.</p>
+        <div class="col s12 l9">
+            <!-- stack-config -->
+            <div class="row" style="margin-top:30px;">
+                <div class="col s12 ">
+                    <div class="col s4 center">
+                        <h4 id="stack-status"> null</h4>
                     </div>
-                    <div class="card-action">
-                        <div class="row center">
-                            <div class="col m3 s12"> <input type="number" id="push-value-input" class="center" value="0"></div>
-                            <div class="col m9 s12 center">
-                                <div class="col s4">
-                                    <a class="btn-floating btn-large waves-effect waves-light " onclick="decrement_push_value()"><i
-                                            class="material-icons">arrow_back</i></a>
+                    <div class="col s4 center input-field">
+                        <input type="number" id="stack-size" class="center" value="5"> <label for="stack-size">Stack
+                            Size</label>
+                    </div>
+                    <div class=" col  btn " onclick="changeStackSize()">Apply</div>
+                </div>
+            </div>
+            <!-- stack config end -->
+            <!-- ards -->
+            <div class="row">
+                <!-- card 1 -->
+                <div class="col s12 m6 l4 ">
+                    <div class="card card-menu">
+                        <div class="card-content">
+                            <span class="card-title">
+                                push()
+                            </span>
+                            <p>
+                                Push operation on a stack results in the addition of a new element on the top of the
+                                stack.</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row center">
+                                <div class="col m3 s12"> <input type="number" id="push-value-input" class="center"
+                                        value="0"></div>
+                                <div class="col m9 s12 center">
+                                    <div class="col s4">
+                                        <a class="btn-floating btn-large waves-effect waves-light " onclick="decrement_push_value()"><i
+                                                class="material-icons">arrow_back</i></a>
+                                    </div>
+                                    <div class="col s4"><a class="btn-floating btn-large waves-effect waves-light "
+                                            onclick="push_to_stack()"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="col s4">
+                                        <a class="btn-floating btn-large waves-effect waves-light " onclick="increment_push_value()"><i
+                                                class="material-icons">arrow_forward</i></a>
+                                    </div>
                                 </div>
-                                <div class="col s4"><a class="btn-floating btn-large waves-effect waves-light " onclick="push_to_stack()"><i
-                                            class="material-icons">add</i></a>
+                                <div class="divider"></div>
+                                <div class="col s12" style="margin-top:20px;">
+                                    <script src="https://gist.github.com/pranshuchittora/a7de856477470bce5ad917d100a7cf11.js"></script>
                                 </div>
-                                <div class="col s4">
-                                    <a class="btn-floating btn-large waves-effect waves-light " onclick="increment_push_value()"><i
-                                            class="material-icons">arrow_forward</i></a>
-                                </div>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="col s12" style="margin-top:20px;">
-                                <script src="https://gist.github.com/pranshuchittora/a7de856477470bce5ad917d100a7cf11.js"></script>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- card 2 -->
-            <div class="col s12 m4 ">
-                <div class="card card-menu">
-                    <div class="card-content">
-                        <span class="card-title">
-                            pop()
-                        </span>
-                        <p>
-                            Pop is an operation performed on a stack to remove the topmost element form it.</p>
-                    </div>
-                    <div class="card-action">
-                        <div class="row center">
-                            <div class="col s12 center">
-                                <a class="btn-floating btn-large waves-effect waves-light " onclick="pop_from_stack()"><i
-                                        class="material-icons">delete_forever</i></a>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="col s12" style="margin-top:20px;">
-                                <script src="https://gist.github.com/pranshuchittora/3e23691239732b454c573d5592ba4f0b.js"></script>
+                <!-- card 2 -->
+                <div class="col s12 m6 l4 ">
+                    <div class="card card-menu">
+                        <div class="card-content">
+                            <span class="card-title">
+                                pop()
+                            </span>
+                            <p>
+                                Pop is an operation performed on a stack to remove the topmost element form it.</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row center">
+                                <div class="col s12 center">
+                                    <a class="btn-floating btn-large waves-effect waves-light " onclick="pop_from_stack()"><i
+                                            class="material-icons">delete_forever</i></a>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="col s12" style="margin-top:20px;">
+                                    <script src="https://gist.github.com/pranshuchittora/3e23691239732b454c573d5592ba4f0b.js"></script>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- card 3 -->
-            <div class="col s12 m4 ">
-                <div class="card card-menu">
-                    <div class="card-content">
-                        <span class="card-title">peek()</span>
-                        <p>
-                            Peek is sort of a get operation performed on a stack which returns the topmost element in
-                            stack.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <div class="row">
-                            <div class="center col s4 offset-s4" id="peek-cont">
-                                <h4 id="peek-value">null</h4>
-                            </div>
-                            <div class="col s12" style="margin-top:20px;">
-                                <script src="https://gist.github.com/pranshuchittora/0e1c944f40628b9d46e0d908ab54c72a.js"></script>
+                <!-- card 3 -->
+                <div class="col s12 m6 l4 ">
+                    <div class="card card-menu">
+                        <div class="card-content">
+                            <span class="card-title">peek()</span>
+                            <p>
+                                Peek is sort of a get operation performed on a stack which returns the topmost element
+                                in
+                                stack.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row">
+                                <div class="center col s4 offset-s4" id="peek-cont">
+                                    <h4 id="peek-value">null</h4>
+                                </div>
+                                <div class="col s12" style="margin-top:20px;">
+                                    <script src="https://gist.github.com/pranshuchittora/0e1c944f40628b9d46e0d908ab54c72a.js"></script>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- card cont end -->
             </div>
-            <!-- card cont end -->
+            <!-- cont end -->
         </div>
-        <!-- cont end -->
     </div>
 </body>
 <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
