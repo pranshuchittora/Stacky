@@ -79,7 +79,7 @@ const stackStatus = () => {
 const changeStackSize = () => {
     const new_size = stackSizeElm.value
     if (new_size < stack.length) {
-        alert('Invalid size declaration')
+        alert('Remove some elements and try again')
         stackSizeElm.value = max_stack_size
     } else {
         max_stack_size = new_size
